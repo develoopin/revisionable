@@ -1,8 +1,8 @@
 <?php
 
-namespace Venturecraft\Revisionable\Tests;
+namespace Kangyasin\Revisionable\Tests;
 
-use Venturecraft\Revisionable\Tests\Models\User;
+use Kangyasin\Revisionable\Tests\Models\User;
 
 class RevisionTest extends \Orchestra\Testbench\TestCase
 {

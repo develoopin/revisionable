@@ -3,7 +3,7 @@
 namespace Venturecraft\Revisionable\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Venturecraft\Revisionable\RevisionableTrait;
+use Kangyasin\Revisionable\RevisionableTrait;
 
 /**
  * Add a revisionable model for testing purposes
