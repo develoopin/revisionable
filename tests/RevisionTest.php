@@ -1,8 +1,8 @@
 <?php
 
-namespace Kangyasin\Revisionable\Tests;
+namespace Devloopin\Revisionable\Tests;
 
-use Kangyasin\Revisionable\Tests\Models\User;
+use Devloopin\Revisionable\Tests\Models\User;
 
 class RevisionTest extends \Orchestra\Testbench\TestCase
 {

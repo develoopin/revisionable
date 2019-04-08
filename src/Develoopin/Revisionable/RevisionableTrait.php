@@ -1,4 +1,4 @@
-<?php namespace Kangyasin\Revisionable;
+<?php namespace Develoopin\Revisionable;
 
 /*
  * This file is part of the Revisionable package by Venture Craft
@@ -9,7 +9,7 @@
 
 /**
  * Class RevisionableTrait
- * @package Kangyasin\Revisionable
+ * @package Develoopin\Revisionable
  */
 trait RevisionableTrait
 {
@@ -90,7 +90,7 @@ trait RevisionableTrait
      */
     public function revisionHistory()
     {
-        return $this->morphMany('\Kangyasin\Revisionable\Revision', 'revisionable');
+        return $this->morphMany('\Develoopin\Revisionable\Revision', 'revisionable');
     }
 
     /**
@@ -102,7 +102,7 @@ trait RevisionableTrait
      */
     public static function classRevisionHistory($limit = 100, $order = 'desc')
     {
-        return \Kangyasin\Revisionable\Revision::where('revisionable_type', get_called_class())
+        return \Develoopin\Revisionable\Revision::where('revisionable_type', get_called_class())
             ->orderBy('updated_at', $order)->limit($limit)->get();
     }
 
@@ -254,7 +254,7 @@ trait RevisionableTrait
                 'created_at' => new \DateTime(),
                 'updated_at' => new \DateTime(),
             );
-            $revision = new \Kangyasin\Revisionable\Revision;
+            $revision = new \Develoopin\Revisionable\Revision;
             \DB::connection($this->getConnectionName())->table($revision->getTable())->insert($revisions);
             \Event::fire('revisionable.deleted', array('model' => $this, 'revisions' => $revisions));
         }

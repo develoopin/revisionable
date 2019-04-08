@@ -1,9 +1,9 @@
 {
-    "name": "kangyasin/revisionable",
+    "name": "develoopin/revisionable",
     "license": "MIT",
     "description": "Keep a revision history for your models without thinking, created as a package for use with Laravel",
     "keywords": ["model", "laravel", "ardent", "revision", "history"],
-    "homepage": "http://github.com/kangyasin/revisionable",
+    "homepage": "http://github.com/develoopin/revisionable",
     "authors": [
         {
             "name": "Chris Duell",
@@ -12,8 +12,8 @@
     ],
     "abandoned": true,
     "support": {
-        "issues": "https://github.com/kangyasin/revisionable/issues",
-        "source": "https://github.com/kangyasin/revisionable"
+        "issues": "https://github.com/develoopin/revisionable/issues",
+        "source": "https://github.com/develoopin/revisionable"
     },
     "require": {
         "php": ">=5.3.0",
@@ -24,12 +24,12 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Kangyasin\\Revisionable": "src/"
+            "Develoopin\\Revisionable": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kangyasin\\Revisionable\\Tests\\": "tests/"
+            "Develoopin\\Revisionable\\Tests\\": "tests/"
         }
     },
     "require-dev": {

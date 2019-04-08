@@ -1,16 +1,16 @@
 <?php
 
-namespace Kangyasin\Revisionable\Tests\Models;
+namespace Develoopin\Revisionable\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Kangyasin\Revisionable\RevisionableTrait;
+use Develoopin\Revisionable\RevisionableTrait;
 
 /**
  * Add a revisionable model for testing purposes
  * I've chosen User, purely because the migration will already exist
  *
  * Class User
- * @package Kangyasin\Revisionable\Tests\Models
+ * @package Develoopin\Revisionable\Tests\Models
  */
 class User extends Model
 {

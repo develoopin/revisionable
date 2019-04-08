@@ -1,6 +1,6 @@
 <?php
 
-namespace Kangyasin\Revisionable;
+namespace Develoopin\Revisionable;
 
 /**
  * FieldFormatter.
@@ -12,7 +12,7 @@ namespace Kangyasin\Revisionable;
 
 /**
  * Class FieldFormatter
- * @package Kangyasin\Revisionable
+ * @package Develoopin\Revisionable
  */
 class FieldFormatter
 {

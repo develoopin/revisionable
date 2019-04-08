@@ -1,4 +1,4 @@
-<?php namespace Kangyasin\Revisionable;
+<?php namespace Develoopin\Revisionable;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Revisionable
- * @package Kangyasin\Revisionable
+ * @package Develoopin\Revisionable
  */
 class Revisionable extends Eloquent
 {
@@ -79,7 +79,7 @@ class Revisionable extends Eloquent
      */
     public function revisionHistory()
     {
-        return $this->morphMany('\Kangyasin\Revisionable\Revision', 'revisionable');
+        return $this->morphMany('\Develoopin\Revisionable\Revision', 'revisionable');
     }
 
     /**
@@ -210,7 +210,7 @@ class Revisionable extends Eloquent
                 'created_at' => new \DateTime(),
                 'updated_at' => new \DateTime(),
             );
-            $revision = new \Kangyasin\Revisionable\Revision;
+            $revision = new \Develoopin\Revisionable\Revision;
             \DB::connection($this->getConnectionName())->table($revision->getTable())->insert($revisions);
         }
     }
