@@ -12,7 +12,7 @@ namespace Kangyasin\Revisionable;
 
 /**
  * Class FieldFormatter
- * @package Venturecraft\Revisionable
+ * @package Kangyasin\Revisionable
  */
 class FieldFormatter
 {

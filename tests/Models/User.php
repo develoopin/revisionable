@@ -1,6 +1,6 @@
 <?php
 
-namespace Venturecraft\Revisionable\Tests\Models;
+namespace Kangyasin\Revisionable\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Kangyasin\Revisionable\RevisionableTrait;
@@ -10,7 +10,7 @@ use Kangyasin\Revisionable\RevisionableTrait;
  * I've chosen User, purely because the migration will already exist
  *
  * Class User
- * @package Venturecraft\Revisionable\Tests\Models
+ * @package Kangyasin\Revisionable\Tests\Models
  */
 class User extends Model
 {

@@ -9,7 +9,7 @@
 
 /**
  * Class RevisionableTrait
- * @package Venturecraft\Revisionable
+ * @package Kangyasin\Revisionable
  */
 trait RevisionableTrait
 {
@@ -90,7 +90,7 @@ trait RevisionableTrait
      */
     public function revisionHistory()
     {
-        return $this->morphMany('\Venturecraft\Revisionable\Revision', 'revisionable');
+        return $this->morphMany('\Kangyasin\Revisionable\Revision', 'revisionable');
     }
 
     /**
@@ -102,7 +102,7 @@ trait RevisionableTrait
      */
     public static function classRevisionHistory($limit = 100, $order = 'desc')
     {
-        return \Venturecraft\Revisionable\Revision::where('revisionable_type', get_called_class())
+        return \Kangyasin\Revisionable\Revision::where('revisionable_type', get_called_class())
             ->orderBy('updated_at', $order)->limit($limit)->get();
     }
 
@@ -254,7 +254,7 @@ trait RevisionableTrait
                 'created_at' => new \DateTime(),
                 'updated_at' => new \DateTime(),
             );
-            $revision = new \Venturecraft\Revisionable\Revision;
+            $revision = new \Kangyasin\Revisionable\Revision;
             \DB::connection($this->getConnectionName())->table($revision->getTable())->insert($revisions);
             \Event::fire('revisionable.deleted', array('model' => $this, 'revisions' => $revisions));
         }

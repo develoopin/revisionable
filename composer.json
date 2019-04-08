@@ -24,12 +24,12 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Venturecraft\\Revisionable": "src/"
+            "Kangyasin\\Revisionable": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Venturecraft\\Revisionable\\Tests\\": "tests/"
+            "Kangyasin\\Revisionable\\Tests\\": "tests/"
         }
     },
     "require-dev": {
