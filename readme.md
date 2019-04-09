@@ -1,10 +1,13 @@
-<img src="http://develoopin.com.au/wp-content/uploads/2015/09/REVISIONABLE.png" style="width: 100%" alt="Revisionable" />
+<img src="https://rawcdn.githack.com/convenia/revisionable/HEAD/revisionable.png" style="width: 100%" alt="Revisionable" />
 
 [![Laravel 4.x](https://img.shields.io/badge/Laravel-4.x-brightgreen.svg?style=flat-square)](http://laravel.com)
 [![Laravel 5.2](https://img.shields.io/badge/Laravel-5.x-brightgreen.svg?style=flat-square)](http://laravel.com)
 [![Latest Version](https://img.shields.io/github/release/develoopin/revisionable.svg?style=flat-square)](https://packagist.org/packages/develoopin/revisionable)
 [![Downloads](https://img.shields.io/packagist/dt/develoopin/revisionable.svg?style=flat-square)](https://packagist.org/packages/develoopin/revisionable)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
+
+And you're good to go!
+This project is a fork of https://github.com/VentureCraft/revisionable with some improvements and new features
 
 Wouldn't it be nice to have a revision history for any model in your project, without having to do any work for it. By simply extending revisionable from your model, you can instantly have just that, and be able to display a history similar to this:
 
