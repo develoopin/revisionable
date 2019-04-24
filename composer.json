@@ -10,7 +10,7 @@
             "email": "me@chrisduell.com"
         }
     ],
-    "abandoned": true,
+    "abandoned": false,
     "support": {
         "issues": "https://github.com/develoopin/revisionable/issues",
         "source": "https://github.com/develoopin/revisionable"
